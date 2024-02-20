@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User dict</title>
+</head>
+<body>
+<form action="/words/" method="post">
+    {% csrf_token %}
+    <input type="text" name="word" id="word">
+    <input type="text" name="translation" id="translation">
+    <input type="text" name="transliteration" id="transliteration">
+    <input type="text" name="transcription" id="transcription">
+    <input type="submit" value="Add">
+</form>
+<br>
+{% for word in all_words %}
+    <p>
+        {{ word.word }} {{ word.translation }}
+    </p>
+{% endfor %}
+</body>
+</html>

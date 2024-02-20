@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+
+<form method="post" action="/user/">
+    
+    {% csrf_token %}
+    
+    <p>User name: {{ user.username }}</p>
+    <label for="email">Email: </label>
+    <input name="email" id="email" type="email" value="{{ user.email }}">
+    <label for="first_name:">First name: </label>
+    <input name="first_name" id="first_name" type="text" value="{{ user.first_name }}">
+    <label for="last_name">Last name: </label>
+    <input name="last_name" id="last_name" type="text" value="{{ user.last_name }}">
+    <input type="submit">
+</form>
+
+<a href="/logout">Logout</a>
+
+</body>
+</html>
