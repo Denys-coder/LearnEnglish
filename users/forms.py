@@ -12,3 +12,13 @@ class RegisterUserForm(ModelForm):
             'email': None,
             'password': None,
         }
+
+
+class LoginUserForm(ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'password']
+        help_texts = {
+            'username': None,
+            'password': None
+        }

@@ -4,12 +4,9 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 
-from users.forms import RegisterUserForm
+from users.forms import RegisterUserForm, LoginUserForm
 from users.models import Score
-from users.models import UserProgress
 
-
-# Create your views here.
 
 def register_handler(request):
     if request.method == 'GET':
@@ -29,18 +26,18 @@ def register_handler(request):
 
 
 def login_handler(request):
+    if request.method == 'GET':
+        user_login_form = LoginUserForm()
+        return render(request, 'login.html', {'user_login_form': user_login_form})
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(request, username=username, password=password)
+        user_login_form = LoginUserForm(request.POST)
+        user = authenticate(request, username=user_login_form.data.get('username'),
+                            password=user_login_form.data.get('password'))
         if user is not None:
             login(request, user)
             return redirect('/user')
-        else:
-            return render(request, 'login.html',
-                          {'error': 'Invalid username or password'})
-    else:
-        return render(request, 'login.html')
+        return render(request, 'login.html',
+                      {'error': 'Invalid username or password', 'user_login_form': user_login_form})
 
 
 def logout_handler(request):

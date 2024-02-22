@@ -12,17 +12,8 @@
 
 <form action="/login/" method="post">
     {% csrf_token %}
-
-    <label for="username">Username: </label>
-    <input id="username" name="username" type="text" required>
-    <br>
-
-    <label for="password">Password: </label>
-    <input id="password" name="password" type="password" required>
-    <br>
-
+    {{ user_login_form }}
     <input type="submit" value="Login">
-
 </form>
 </body>
 </html>

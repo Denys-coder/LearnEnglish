@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="create user registration, authorization, logout, user profile, display all user words, add words to dictionary">
-      <change afterPath="$PROJECT_DIR$/templates/word.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words/forms.py" afterDir="false" />
+    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="create word and register functions are now working on HTML forms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnEnglish/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearnEnglish/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user-dict.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user-dict.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.LearnEnglish.executor": "Run",
+    "Django Server.LearnEnglish.executor": "Debug",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,7 +55,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -126,7 +120,9 @@
       <workItem from="1708352020384" duration="19380000" />
       <workItem from="1708426031182" duration="8922000" />
       <workItem from="1708515786873" duration="15346000" />
-      <workItem from="1708539960092" duration="8985000" />
+      <workItem from="1708539960092" duration="9322000" />
+      <workItem from="1708566487857" duration="190000" />
+      <workItem from="1708566715836" duration="2012000" />
     </task>
     <task id="LOCAL-00001" summary="create endpoints and handlers, create models, create migrations, apply migrations">
       <option name="closed" value="true" />
@@ -144,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708434511000</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create word and register functions are now working on HTML forms">
+      <option name="closed" value="true" />
+      <created>1708566161462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708566161463</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +157,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create endpoints and handlers, create models, create migrations, apply migrations" />
     <MESSAGE value="create user registration, authorization, logout, user profile, display all user words, add words to dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="create user registration, authorization, logout, user profile, display all user words, add words to dictionary" />
+    <MESSAGE value="create word and register functions are now working on HTML forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="create word and register functions are now working on HTML forms" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/users/views.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/users/views.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
