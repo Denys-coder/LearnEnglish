@@ -6,7 +6,7 @@ from django.db.models import ForeignKey, CharField
 # Create your models here.
 
 class UserDict(models.Model):
-    user = ForeignKey(User, on_delete=models.CASCADE)
+    user = ForeignKey(User, on_delete=models.CASCADE, editable=False)
     word = CharField(max_length=50)
     translation = CharField(max_length=50)
     transcription = CharField(max_length=50)

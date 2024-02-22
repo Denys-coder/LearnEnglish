@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 
+from words.forms import PartialWordForm
 from words.models import UserDict
 
 
@@ -14,7 +15,8 @@ class Words(View):
 
         current_user = User.objects.get(username=request.user.username)
         all_words = UserDict.objects.filter(user=current_user)
-        return render(request, 'user-dict.html', {'all_words': all_words})
+        article_form = PartialWordForm()
+        return render(request, 'user-dict.html', {'all_words': all_words, 'article_form': article_form})
 
     def post(self, request):
 
@@ -22,16 +24,15 @@ class Words(View):
             return redirect('/login')
 
         current_user = User.objects.get(username=request.user.username)
-        word = request.POST.get("word")
-        translation = request.POST.get("translation")
-        transcription = request.POST.get("transcription")
-        transliteration = request.POST.get("transliteration")
-        db_word = UserDict(user=current_user, word=word, translation=translation, transcription=transcription,
-                           transliteration=transliteration)
-        db_word.save()
+
+        new_word = UserDict(user=current_user)
+        word_form = PartialWordForm(request.POST, instance=new_word)
+        if word_form.is_valid():
+            word_form.save()
 
         all_words = UserDict.objects.filter(user=current_user)
-        return render(request, 'user-dict.html', {'all_words': all_words})
+        article_form = PartialWordForm()
+        return render(request, 'user-dict.html', {'all_words': all_words, 'article_form': article_form})
 
 
 # Create your views here.

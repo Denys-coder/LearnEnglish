@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 
+from users.forms import RegisterUserForm
 from users.models import Score
 from users.models import UserProgress
 
@@ -11,15 +12,20 @@ from users.models import UserProgress
 # Create your views here.
 
 def register_handler(request):
+    if request.method == 'GET':
+        user_registration_form = RegisterUserForm()
+        return render(request, 'register.html', {'user_registration_form': user_registration_form})
+
     if request.method == 'POST':
-        username = request.POST['username']
-        email = request.POST['email']
-        password = request.POST['password']
-        user = User.objects.create_user(username, email=email, password=password)
-        user.save()
-        return redirect('/login')
-    else:
-        return render(request, 'register.html')
+        register_user_form = RegisterUserForm(request.POST)
+        if register_user_form.is_valid():
+            user = register_user_form.save(commit=False)  # Don't save yet
+            password = register_user_form.cleaned_data.get('password')
+            user.set_password(password)  # Hash the password
+            user.save()  # Save the user with hashed password
+            return redirect('/login')
+        else:
+            return render(request, 'register.html', {'user_registration_form': register_user_form})
 
 
 def login_handler(request):
@@ -31,7 +37,8 @@ def login_handler(request):
             login(request, user)
             return redirect('/user')
         else:
-            return render(request, 'login.html', {'error': 'Invalid username or password'})
+            return render(request, 'login.html',
+                          {'error': 'Invalid username or password'})
     else:
         return render(request, 'login.html')
 
