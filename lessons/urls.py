@@ -4,5 +4,5 @@ from lessons import views
 
 urlpatterns = [
     path('', views.all_lessons, name='all_lessons'),
-    path('<lesson_id>/', views.lesson_detail, name='lesson_detail'),
+    path('<lesson_id>/', views.LessonView.as_view(), name='lesson_detail'),
 ]

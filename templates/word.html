@@ -5,7 +5,16 @@
     <title>Word</title>
 </head>
 <body>
-<p>{{ word }}</p>
-
+{% if message %}
+    {{ message }}
+{% endif %}
+<p>{{ word.word }}</p>
+<form action="/words/{{ random_id }}/" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="word_id" value="{{ word.id }}">
+    <label for="translate">Translate:</label>
+    <input type="text" id="translate" name="translate">
+    <input type="submit" value="Check">
+</form>
 </body>
 </html>
