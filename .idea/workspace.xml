@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="login function is now working on HTML forms">
-      <change afterPath="$PROJECT_DIR$/templates/all_lessons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/lesson.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/lesson_answers.html" afterDir="false" />
+    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="make lessons functionality">
+      <change afterPath="$PROJECT_DIR$/templates/leaderboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/score_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/word.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lesson_answers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lesson_answers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user-dict.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user-dict.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/words/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/words/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/views.py" afterDir="false" />
     </list>
@@ -27,13 +30,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -44,31 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.LearnEnglish.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/My Data/Google Drive/Programming/Python/LearnEnglish/words&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.LearnEnglish.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/My Data/Google Drive/Programming/Python/LearnEnglish/words",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\My Data\Google Drive\Programming\Python\LearnEnglish\words" />
@@ -129,7 +135,8 @@
       <workItem from="1708566487857" duration="190000" />
       <workItem from="1708566715836" duration="2394000" />
       <workItem from="1708602657041" duration="27010000" />
-      <workItem from="1708637554427" duration="1283000" />
+      <workItem from="1708637554427" duration="1999000" />
+      <workItem from="1708684624999" duration="17394000" />
     </task>
     <task id="LOCAL-00001" summary="create endpoints and handlers, create models, create migrations, apply migrations">
       <option name="closed" value="true" />
@@ -163,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708569098896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="make lessons functionality">
+      <option name="closed" value="true" />
+      <created>1708639027949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708639027951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +189,8 @@
     <MESSAGE value="create user registration, authorization, logout, user profile, display all user words, add words to dictionary" />
     <MESSAGE value="create word and register functions are now working on HTML forms" />
     <MESSAGE value="login function is now working on HTML forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="login function is now working on HTML forms" />
+    <MESSAGE value="make lessons functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="make lessons functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,6 +199,11 @@
           <url>file://$PROJECT_DIR$/users/views.py</url>
           <line>17</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/users/score_utils.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

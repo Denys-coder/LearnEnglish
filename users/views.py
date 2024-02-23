@@ -40,6 +40,7 @@ def login_handler(request):
                       {'error': 'Invalid username or password', 'user_login_form': user_login_form})
 
 
+@login_required(login_url='/login')
 def logout_handler(request):
     logout(request)
     return redirect("/login")
@@ -55,7 +56,7 @@ def user_handler(request):
         user.save()
     user = User.objects.get(username=request.user.username)
 
-    user_score = Score.objects.filter(user=user)
+    user_score = Score.objects.filter(user=user).first()
     if not user_score:
         user_score = Score(user=user, score=0)
         user_score.save()
@@ -63,5 +64,11 @@ def user_handler(request):
     return render(request, 'user-profile.html', {'user': user, 'user_score': user_score})
 
 
+@login_required(login_url='/login')
 def user_delete_handler(request):
     return HttpResponse("delete user")
+
+
+def leaderboard(request):
+    scores = Score.objects.order_by("-score")
+    return render(request, 'leaderboard.html', {"scores": scores})
