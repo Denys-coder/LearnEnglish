@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="make lessons functionality">
-      <change afterPath="$PROJECT_DIR$/templates/leaderboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/score_utils.py" afterDir="false" />
+    <list default="true" id="cd13a5de-7d99-450d-ab6f-60c674dcd9b6" name="Changes" comment="make scoring system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lesson_answers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lesson_answers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user-dict.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user-dict.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/words/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -54,6 +44,12 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Django Server.LearnEnglish.executor": "Run",
+    "Django tests.Test: users.tests.TestUserProfile.executor": "Run",
+    "Django tests.Test: users.tests.TestUserRegister.executor": "Run",
+    "Django tests.Test: users.tests.TestUserRegister.test_register_new.executor": "Run",
+    "Django tests.Test: words.tests.CheckAnswersTest.executor": "Run",
+    "Django tests.Test: words.tests.CheckAnswersTest.test_answer_check.executor": "Run",
+    "Django tests.Test: words.tests.WordsTest.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,7 +76,112 @@
       <recent name="C:\My Data\Google Drive\Programming\Python\LearnEnglish\words" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django tests.Test: words.tests.CheckAnswersTest.test_answer_check">
+    <configuration name="Test: users.tests.TestUserProfile" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="LearnEnglish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.TestUserProfile" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.TestUserRegister" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="LearnEnglish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.TestUserRegister" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: words.tests.CheckAnswersTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="LearnEnglish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="words.tests.CheckAnswersTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: words.tests.CheckAnswersTest.test_answer_check" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="LearnEnglish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="words.tests.CheckAnswersTest.test_answer_check" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: words.tests.WordsTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="LearnEnglish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="words.tests.WordsTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="LearnEnglish" type="Python.DjangoServer" factoryName="Django server">
       <module name="LearnEnglish" />
       <option name="ENV_FILES" value="" />
@@ -106,6 +207,15 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: words.tests.CheckAnswersTest.test_answer_check" />
+        <item itemvalue="Django tests.Test: words.tests.CheckAnswersTest" />
+        <item itemvalue="Django tests.Test: words.tests.WordsTest" />
+        <item itemvalue="Django tests.Test: users.tests.TestUserProfile" />
+        <item itemvalue="Django tests.Test: users.tests.TestUserRegister" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -136,7 +246,8 @@
       <workItem from="1708566715836" duration="2394000" />
       <workItem from="1708602657041" duration="27010000" />
       <workItem from="1708637554427" duration="1999000" />
-      <workItem from="1708684624999" duration="17394000" />
+      <workItem from="1708684624999" duration="18271000" />
+      <workItem from="1709126212713" duration="21130000" />
     </task>
     <task id="LOCAL-00001" summary="create endpoints and handlers, create models, create migrations, apply migrations">
       <option name="closed" value="true" />
@@ -178,11 +289,30 @@
       <option name="project" value="LOCAL" />
       <updated>1708639027951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="make scoring system">
+      <option name="closed" value="true" />
+      <created>1708728909430</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708728909433</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create endpoints and handlers, create models, create migrations, apply migrations" />
@@ -190,7 +320,8 @@
     <MESSAGE value="create word and register functions are now working on HTML forms" />
     <MESSAGE value="login function is now working on HTML forms" />
     <MESSAGE value="make lessons functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="make lessons functionality" />
+    <MESSAGE value="make scoring system" />
+    <option name="LAST_COMMIT_MESSAGE" value="make scoring system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -200,12 +331,15 @@
           <line>17</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/users/score_utils.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__users_tests_TestUserRegister.coverage" NAME="Test: users.tests.TestUserRegister Coverage Results" MODIFIED="1709140345313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__users_tests_TestUserRegister_test_register_new.coverage" NAME="Test: users.tests.TestUserRegister.test_register_new Coverage Results" MODIFIED="1709140331903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__words_tests_WordsTest.coverage" NAME="Test: words.tests.WordsTest Coverage Results" MODIFIED="1709151249462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__users_tests_TestUserProfile.coverage" NAME="Test: users.tests.TestUserProfile Coverage Results" MODIFIED="1709141292155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__words_tests_CheckAnswersTest.coverage" NAME="Test: words.tests.CheckAnswersTest Coverage Results" MODIFIED="1709161546942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/LearnEnglish$Test__words_tests_CheckAnswersTest_test_answer_check.coverage" NAME="Test: words.tests.CheckAnswersTest.test_answer_check Coverage Results" MODIFIED="1709161745127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
